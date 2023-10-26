@@ -1,0 +1,40 @@
+# installation of nginx on ubuntu server
+sudo apt update
+sudo apt install nginx
+sudo systemctl status nginx
+sudo systemctl reload nginx
+sudo systemctl restart nginx
+
+
+#To change the configuration file
+cd /etc/nginx/sites-available/default
+
+server {
+        listen 8080;
+        listen [::]:8080;
+        
+        server_name opstree.com;
+        
+        location / {
+                try_files $uri $uri/ =404;
+                proxy_pass http://10.0.2.109:27017; (forwarder)
+        }
+}
+
+
+# for adding domain to the server IP
+cd /var/www/html/mongoindex.html
+
+server {
+        listen 27017;
+        listen [::]:27017;
+
+        server_name example.com;
+
+        root /var/www/html;
+        index mongoindex.html;
+
+        location / {
+                try_files $uri $uri/ =404;
+        }
+}
