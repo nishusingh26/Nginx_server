@@ -5,6 +5,8 @@ sudo systemctl status nginx
 sudo systemctl reload nginx
 sudo systemctl restart nginx
 
+# copy the file to remote server
+scp -i application.pem application.pem ubuntu@3.89.122.140:
 
 #To change the configuration file
 cd /etc/nginx/sites-available/default
