@@ -1,0 +1,183 @@
+
+   92  mkdir linux
+   93  sudo mkdir linux
+   96  mkdir Assignment-01
+   98  ls -l
+   99  chown nishu linux
+  102  sudo chown nishu:nishu linux
+  122  mkdir -p /tmp/dir1/dir2/dir3
+  159  mkdir -p /dir1/dir2
+  160  sudo mkdir -p /dir1/dir2
+  161  ls
+  162  sudo mkdir -p /tmp/dir1/dir2/dir3
+  163  ls
+  164  ls -R
+  165  clear
+  166  rm -rf dir3
+  167  ls
+  168  ls -R
+  169  ls
+  170  cd dir1
+  171  ls
+  172  cd dir2
+  173  ls
+  174  cd ..
+  175  ls -a
+  176  rm -i dir1
+  177  rmdir -i dir1
+  178  rm -i /dir1
+  179  rm --help
+  180  rm -i dir1/
+  181  rm -i /dir1/
+  182  rm -i /dir1
+  183  rm -rfi /dir1
+  184  rm -rfi /dir2
+  185  rm -rfi /dir1
+  186  ls
+  187  ls -R
+  188  clear
+  189  rmdir dir3
+  190  rm -p dir3
+  191  rm -p /dir1/dir2/dir3
+  192  rmdir -p /dir1/dir2/dir3
+  193  rmdir -p dir1/dir2/dir3
+  194  sudo rmdir -p dir1/dir2/dir3
+  195  ls -R
+  196  ls
+  197  mkdir -p /dir1/dir2/dir3
+  198  sudo mkdir -p /dir1/dir2/dir3
+  199  ls -R
+  200  clear
+  201  ls
+  202  mkdir -p /dir1/dir2/dir3
+  203  ls -R
+  204  mkdir -p /tmp/dir1/dir2/dir3
+  205  ls -R
+  206  rm -R -- */
+  207  rm -R -- dir1/
+  208  rm -R -- /dir1/
+  209  rm -R -- */dir1
+  210  rm -R -- */dir1/
+  211  rm -R -- /dir1/
+  212  sudo rm -R -- /dir1/
+  213  ls -R
+  214  mkdir -p /tmp/dir1/dir2/dir3
+  215  ls
+  216  ls -R
+  217  rm -R dir3
+  218  rm -rf //dir3
+  219  ls -R
+  220  cd /dir1/dir2
+  221  cd /dir1/dir2/
+  222  cd dir1
+  223  cd dir2
+  224  ls
+  225  rm dir3
+  226  sudo rm dir3
+  227  ls -l dir3
+  228  ls -l
+  229  rmdir dir3
+  230  ls
+  231  cd ..
+  232  mkdir /tmp/nishu
+  233  rmdir /tmp/nishu
+  234  ls 
+  235  cd tmp
+  236  ls
+  237  touch file/nishu.txt
+  238  touch /file/nishu.txt
+  239  touch /tmp/file/nishu.txt
+  240  cd..
+  241  cd ..
+  242  ls
+  243  touch -p /tmp/file/nishu.txt
+  244  touch --help
+  245  nano -p /tmp/nishu.txt
+  246  echo "This is my first line" >> /tmp/nishu.txt
+  247  echo "This is a additional content" >> /tmp/nishu.txt
+  249  nano -p /tmp/singh.txt
+  250  echo "singh is my last name" >> /tmp/singh.txt
+  251  cd /tmp
+  252  ls
+  253  cat nishu.txt
+  254  cat singh.txt
+  255  cd ..
+  256  echo "this is line at the beginning" | cat singh.txt
+  257  echo "this is line at the beginning" | cat /tmp/singh.txt
+  258  cd /tmp
+  259  ls
+  260  cat singh.txt
+  261  cd ..
+  262  echo "this is line at the beginning" | cat - /tmp/singh.txt
+  263  cd /tmp
+  264  ls
+  265  cat singh.txt
+  266  cd ..
+  267  echo "this is line at the beginning" | cat - /tmp/singh.txt | sponge /tmp/singh.txt
+  268  sudo apt install moreutils
+  269  echo "this is line at the beginning" | cat - /tmp/singh.txt | sponge /tmp/singh.txt
+  270  cd /tmp
+  271  cat singh.txt
+  272  echo "nishu is my name" >> singh.txt
+  273  echo "Enrolled in Ninja Program -24" >> singh.txt
+  274  echo "Started learning Linux Basics" >> singh.txt
+  275  echo "Started learning Linux File System" >> singh.txt
+  276  echo "Started learning Linux Process System" >> singh.txt
+  277  echo "Started learning Linux hardisk Information" >> singh.txt
+  278  echo "Started learning Scripting Information" >> singh.txt
+  279  echo "Started learning about loops and cases Information" >> singh.txt
+  280  cat singh.txt
+  281  cd ..
+  282  fsblk
+  283  lsblk
+  284  df -T
+  285  ls
+  286  cd /tmp
+  287  ls
+  288  cat singh.txt
+  289  head -n 5 singh.txt
+  290  head -n 6 singh.txt | tail -n 1
+  291  head -n 6 singh.txt | tail -n 2
+  292  head -n 10 singh.txt | tail -n 2
+  293  head -n 8 singh.txt | tail -n 5
+  301  ls -a
+  303  ls -p | grep -v /
+  314  ls -d */
+  320  clear
+  326  cp /tmp/singh.txt /tmp/dir1/dir2/singh.txt
+  327  cp /tmp/singh.txt /tmp/dir1/dir2/singh.copy
+  328  mv /tmp/nishu.txt /tmp/nishu_new.txt
+  329  cd /tmp
+  330  ls
+  331  tree
+  332  cd ..
+  333  mv /tmp/singh.txt /tmp/dir1/
+  334  tree
+  335  cd /tmp
+  336  tree
+  337  cd dir1/dir2/
+  338  ls
+  339  cat singh.copy
+  340  cd ..
+  341  > /tmp/dir1/dir2/singh.copy 
+  342  cd /tmp/dir1/dir2/
+  343  cat singh.copy
+  344  rm singh.copy
+  345  ls
+  346  cd ..
+  347  history
+  348  history > assignment1.txt
+  349  sudo history >> assignment1.txt
+  350  sudo history > assignment1.txt
+  351  cd /tmp
+  352  sudo history > assignment1
+  353  sudo history >> assignment1
+  354  cd ..
+  355  history >> project
+  356  sudo history >> project
+  357  cd /tmp
+  358  sudo history >> assign1
+  359  cd /
+  360  sudo history >> command_hist.txt
+  361  cd /tmp
+  362  history >> command_hist.txt
